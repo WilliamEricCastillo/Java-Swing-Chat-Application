@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.EventQueue;
 
 public class Main {
-    static Server server01 = new Server();
+    static ChatServer server01 = new ChatServer();
 
     public static void main(String[] args) {
         EventQueue.invokeLater(new Runnable() {
@@ -18,8 +18,14 @@ public class Main {
                 } catch (Exception e) {
                     // If Nimbus is not available, you can set the GUI to another look and feel.
                 }
-                server01.add(new Chatter("William", server01));
-                server01.add(new Chatter("Jin", server01));
+                server01.add(new Chatty("William", server01));
+                server01.add(new Chatty("Jin", server01));
+                server01.add(new Chatty("J-Hope", server01));
+                server01.add(new Chatty("Jimin", server01));
+                server01.add(new Chatty("V", server01));
+                server01.add(new Chatty("Suga", server01));
+                server01.add(new Chatty("RM", server01));
+                server01.add(new Chatty("JK", server01));
             }
         });
     }

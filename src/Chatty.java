@@ -1,17 +1,14 @@
 import javax.swing.*;
 import java.awt.event.*;
-public class Chatter implements ActionListener,IReceive {
+public class Chatty implements ActionListener, UGotMessages {
     private JTextArea chat_display,user_input;
     private JButton send_button;
-
     private final String user_name;
+    private final Transmission server;
 
-    private final ISend server;
-
-    Chatter(String user_name, ISend server){
+    Chatty(String user_name, Transmission server){
         this.user_name = user_name;
         this.server = server;
-
         initialize();
     }
 
@@ -38,7 +35,7 @@ public class Chatter implements ActionListener,IReceive {
         send_button = new JButton("Send");
         send_button.setBounds(330, 400, 75, 50);
 
-        //
+
         send_button.addActionListener(this);
 
         // adds each object to jframe
@@ -52,7 +49,7 @@ public class Chatter implements ActionListener,IReceive {
     }
 
     public void actionPerformed(ActionEvent e) {
-        server.send(user_name,user_input.getText());
+        server.transmit(user_name,user_input.getText());
         user_input.setText("");
     }
 
