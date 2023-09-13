@@ -38,3 +38,6 @@ To get started with this chat application, follow these steps:
 2. Create multiple instances of the Chatty class (chat clients) with different user names.
 3. Use the GUI of each chat client to send and receive messages in real time.
 4. Messages sent by one client will be broadcast to all connected clients.
+
+## Contributor 
+- William Castillo
