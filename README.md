@@ -1,6 +1,6 @@
 # Java Swing Chat Application
 
-This is a simple Java-based chat application that allows multiple users to communicate with each other in real-time. 
+This is a simple Java-based chat application that allows multiple users to communicate with each other in real time. 
 It uses the Swing library for the user interface and facilitates communication between clients through a central server.
 
 ## Features
@@ -28,7 +28,7 @@ To get started with this chat application, follow these steps:
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/chat-application.git
+   git clone https://github.com/WilliamEricCastillo/chat-application.git
 2. Open the project in your preferred Java development environment (e.g., Eclipse, IntelliJ IDEA).
 3. Compile and run the Main class to start the server and create chat clients.
 4. Customize and expand the application as needed for your specific use case.
